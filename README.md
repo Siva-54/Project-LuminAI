@@ -22,8 +22,7 @@ LuminAI is an AI-powered chatbot designed to assist users with their skincare-re
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/luminai.git
-   cd luminai
+   git clone https://github.com/Siva-54/Project-LuminAI.git
    ```
 2. Install dependencies (if applicable).
 3. Add your Google Gemini API Key in `config.js`:
