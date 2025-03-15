@@ -1,3 +1,5 @@
+import MY_API_KEY from "./config.js";
+
 const typingForm = document.querySelector(".input-form");
 const chatList = document.querySelector(".chat-list");
 const suggestions = document.querySelectorAll(".faq-list .faq")
