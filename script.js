@@ -204,11 +204,11 @@ async function initializeApp() {
 // Create a simple environment.js file for Vercel deployment
 document.addEventListener("DOMContentLoaded", () => {
   // Create environment.js file if it doesn't exist (for Vercel)
-  if (!window.ENV) {
-    window.ENV = {
-      GEMINI_API_KEY: "AIzaSyDashnDPtwtunDcuX_yANNkwGtb1qetmAQ" // Your API key from config.js
-    };
-  }
+  // if (!window.ENV) {
+  //   window.ENV = {
+  //     GEMINI_API_KEY: "AIzaSyDashnDPtwtunDcuX_yANNkwGtb1qetmAQ" // Your API key from config.js
+  //   };
+  // }
   
   // Initialize the app
   initializeApp();
