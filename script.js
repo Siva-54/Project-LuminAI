@@ -1,4 +1,21 @@
-import MY_API_KEY from "./config.js";
+let MY_API_KEY;
+if (typeof process !== 'undefined' && process.env.MY_API_KEY) {
+  MY_API_KEY = process.env.MY_API_KEY;
+} else {
+  // For local development, could load from a config file
+  try {
+    // This is a dynamic import that will work in browser modules
+    import('./config.js').then(module => {
+      MY_API_KEY = module.default;
+      initializeApp();
+    }).catch(() => {
+      console.error("Failed to load config file");
+    });
+  } catch (e) {
+    console.error("API key not available");
+  }
+}
+
 
 const typingForm = document.querySelector(".input-form");
 const chatList = document.querySelector(".chat-list");
